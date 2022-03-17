@@ -1,3 +1,5 @@
+
+
 .div-top {
     padding-top: 25px;
     color: white;
@@ -12,7 +14,8 @@
   .div-row{
       justify-content: center;
       background:linear-gradient(to bottom,#1e2020,#272727);
-      height: 70.1vh
+      height: 75vh;
+      max-width: 100%;
   }
 
 
@@ -51,7 +54,7 @@
       margin: 0 auto ;
       margin-top: 30px;
       padding: 5px;
-      width: 500px;
+      width: 40%;
       display: block;
       position: relative;
       font-weight: bold;
@@ -64,6 +67,7 @@
   .row{
     display: flex;
     justify-content: space-evenly;
+    max-width: 100%;
   }
 
   .bottomIcon{
