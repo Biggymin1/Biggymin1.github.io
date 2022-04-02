@@ -1,0 +1,26 @@
+
+
+<body>
+    <input id="myInput" type="text" onchange="changeV()">
+
+    <span id="myText"></span></h1>
+
+    <h1 id = "unlocked">number of users:</h1>
+</body>
+
+<script>
+let v = 0;
+var changeV = ()=>{
+    v = document.getElementById("myInput").value;
+    document.getElementById("myText").innerHTML = v;
+
+    //this is not secured since it's server sided and people can see it
+    if(v == "1september"){
+        document.getElementById("unlocked").style.display = "block"
+    }
+    else{
+        document.getElementById("unlocked").style.display = "none"
+    }
+    
+}
+</script>
