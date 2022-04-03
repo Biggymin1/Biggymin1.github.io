@@ -1,0 +1,74 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pageStyle.css">
+</head>
+
+<body>
+    <h1>Amin Wali</h1>
+
+    <p id = 'p1' class="story">
+        My Name is <span class="highlight">Amin Wali</span> and I was born in Malaysia, I started programming when I was 10 on a mobile phone
+        and most
+        of my other skills grows from there.
+
+        <br></br>
+
+        It all started from making a game, then I realised that in order to achieve
+        great results programming by itself is not enough
+
+        <br></br>
+
+        When I was a teenager, I went to a boarding school where I met a lot of people
+        with different type of personalities thus realised that social skills is one of
+        the most important skills even if your other skills are not as superior
+    </p>
+
+    <h2 class="sub-title">Some of my other skills are:</h2>
+
+    <div class="story">
+        <ul>
+            <li>Video Editing</li>
+            <li>Photo Editing</li>
+            <li>Graphic Design</li>
+            <li>3D Modeling</li>
+            <li>3D Animation</li>
+            <li>Vector and Motion Graphic</li>
+          </ul>  
+    </div>
+
+    <p id = 'p2' class="story">
+        You can learn more about my programming skills <span class="highlight" onclick="changeToProgramming()">here</span>
+    </p>
+    
+
+    <div class="vl"></div>
+</body>
+
+<script src="pageScript.js"></script>
+
+<script>
+
+    function adjustment(){
+        if(innerWidth < 400){
+            document.getElementById("p1").className = 'story-mod'
+            document.getElementById("p2").className = 'story-mod'
+        }
+    }
+
+
+    window.addEventListener("scroll", () => {
+
+        const yScroll = window.scrollY;
+        console.log(yScroll);
+
+        adjustment();
+    })
+</script>

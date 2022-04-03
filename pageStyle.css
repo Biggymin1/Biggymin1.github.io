@@ -1,0 +1,37 @@
+h1{
+font-family: 'Rubik Wet Paint', cursive;
+
+}
+
+.story{
+    width: 40%;
+    margin-left: 50px;
+    color: grey;
+    font-size: larger;
+}
+
+.story-mod{
+    width: 40%;
+    margin-left: 20px;
+    color: grey;
+    font-size: larger;
+}
+
+.highlight{
+    color: rgb(192, 24, 24);
+}
+
+.sub-title{
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 30px;
+}
+
+.vl {
+    border-left: 6px solid rgb(175, 0, 0);
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 90;
+  }
+  
