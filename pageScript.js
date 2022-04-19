@@ -1,12 +1,12 @@
 
 function changeToProgramming(){
-    window.location.href = "programming.html";
+    top.window.location.href = "programming.html";
 }
 
 function changeToAbout(){
-    window.location.href = "about.html";
+    top.window.location.href = "about.html";
 }
 
 function changeToIndex(){
-    window.location.href = "index.html";
+    top.window.location.href = "index.html";
 }
