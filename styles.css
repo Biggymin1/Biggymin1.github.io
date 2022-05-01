@@ -60,6 +60,39 @@
       font-weight: bold;
   }
 
+  .iconRow{
+    color: black;
+    margin: 0 auto ;
+    margin-bottom: 100px;
+    padding: 5px;
+    width:50vw;
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
+
+.iconRow3{
+  color: black;
+  margin: 0 auto ;
+  margin-bottom: 130px;
+  padding: 5px;
+  max-width:50vw;
+  display: block;
+  position: relative;
+  font-weight: bold;
+}
+
+.iconRow2{
+  color: black;
+  margin: 0 auto ;
+  margin-bottom: 130px;
+  padding: 5px;
+  max-width:50vw;
+  display: block;
+  position: relative;
+  font-weight: bold;
+}
+
   .div-button:hover{
     background: linear-gradient(to right,#ec3c7f,#fac1e0);
   }
@@ -101,4 +134,40 @@
     background-color: yellow;
   }
 
+  .appTitle{
+    position: relative;top: 60px;
+    color: white;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+  }
+
   body{margin: 0%}
+
+  .iconToClick{
+    height: auto;width: 75px;position: absolute;
+  }
+  
+  .iconToClick:hover{
+    width: 100px;
+    size-adjust: 1px;
+  }
+
+  .iconAndText{
+    position: absolute;width: 75px;
+  }
+
+  .topMiddleWide{
+    position: absolute; left: 46%;width: 75px;
+  }
+
+  .topMiddleUnwide{
+    
+  }
+
+  .bottomMiddleWide{
+    position: absolute; left: 46%;width: 75px;
+  }
+
+  .bottomMiddleUnwide{
+    
+  }
