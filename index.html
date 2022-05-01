@@ -22,12 +22,95 @@
 
     <div class="div-row">
         <br>
-        <button onclick="change_page_instagram()" class="div-button">Instagram</button>
-        <button onclick="change_page_github()" class="div-button">Github</button>
-        <button onclick="change_page_cgtrader()" class="div-button">CGTrader</button>
-        <button onclick="change_page_googleplay()" class="div-button">Google Play</button>
-        <button onclick="change_page_youtube()" class="div-button">Youtube</button>
-        <button onclick="change_page_discord()" class="div-button">Discord</button>
+
+        <div class="iconRow3">
+            <!-- this is each row that contains 2 image -->
+            <div style="position: absolute;width: 75px;"onclick = "change_page_instagram()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="ignobg.png">
+                <h6 class="appTitle">Instagram</h6>
+            </div>
+
+            <div style="position: absolute; left: 46%;width: 75px;"onclick = "change_page_github()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="github.webp">
+                <h6 class="appTitle">Github</h6>
+            </div>
+
+            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_cgtrader()">
+                <img class="iconToClick" src="cgtrader-modified.png">
+                <h6 class="appTitle">CGTrader</h6>
+            </div>     
+            <!-- this is text for each icon -->
+        </div>
+
+        <div class="iconRow3">
+            <!-- this is each row that contains 2 image -->
+            <div style="position: absolute;width: 75px;"onclick = "change_page_googleplay()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="google.webp">
+                <h6 class="appTitle">Google Play</h6>
+            </div>
+
+            <div style="position: absolute; left: 46%;width: 75px;"onclick = "change_page_youtube()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="youtube.png">
+                <h6 class="appTitle">Youtube</h6>
+            </div>
+
+            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_discord()">
+                <img class="iconToClick" src="discord-icon.svg">
+                <h6 class="appTitle">Discord</h6>
+            </div>     
+            <!-- this is text for each icon -->
+        </div>
+
+        <div id="mobileRow" class="iconRow2">
+            <!-- this is each row that contains 2 image -->
+            <div style="position: absolute;width: 75px;"onclick = "change_page_googleplay()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="ignobg.png">
+                <h6 class="appTitle">Instagram</h6>
+            </div>
+        
+            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_github()">
+                <img class="iconToClick" src="github.webp">
+                <h6 class="appTitle">Github</h6>
+            </div>     
+            <!-- this is text for each icon -->
+        </div>
+
+        <div id="mobileRow1" class="iconRow2">
+            <!-- this is each row that contains 2 image -->
+            <div style="position: absolute;width: 75px;"onclick = "change_page_cgtrader()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="cgtrader-modified.png">
+                <h6 class="appTitle">CG Trader</h6>
+            </div>
+        
+            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_googleplay()">
+                <img class="iconToClick" src="google.webp">
+                <h6 class="appTitle">Google Play</h6>
+            </div>     
+            <!-- this is text for each icon -->
+        </div>
+
+        <div id="mobileRow2" class="iconRow2">
+            <!-- this is each row that contains 2 image -->
+            <div style="position: absolute;width: 75px;"onclick = "change_page_youtube()">
+                <!-- each image and text considered as 1 -->
+                <img class="iconToClick" src="youtube.png">
+                <h6 class="appTitle">Youtube</h6>
+            </div>
+        
+            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_discord()">
+                <img class="iconToClick" src="discord-icon.svg">
+                <h6 class="appTitle">Discord</h6>
+            </div>     
+            <!-- this is text for each icon -->
+        </div>
+
+
 
         <div class="row">
             <button id="lb" onclick="change_page_paypal()" class="bottomIcon"><i style="color: white;" class="fa fa-paypal"></i></button>
@@ -43,21 +126,6 @@
         
     </div>
 
-    <div style="width: 200px;position: absolute;">
-        <!-- this is each row that contains 2 image -->
-        <div style="position: absolute;">
-            <!-- each image and text considered as 1 -->
-            <img style="height: auto;width: 75px;position: absolute;" src="ignobg.png">
-            <h6 style="position: relative;top: 60px;left: 10px;color: white;">Instagram</h6>
-        </div>
-        <div style="position: absolute;right: 0px;">
-            <img style="height: auto;width: 75px;position: absolute;" src="github.jpg">
-            <h6 id="appTitle" style="position: relative;top: 60px;left: 12px; color: white;">Instagram</h6>
-        </div>
-        
-        
-        <!-- this is text for each icon -->
-    </div>
 
     <br>
 
