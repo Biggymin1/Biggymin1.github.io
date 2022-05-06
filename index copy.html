@@ -9,10 +9,38 @@
 
         <link rel="stylesheet" href="styles.css">
 </head>
+<script src="jquery.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
+
+    <div id="preloader" class="middle-wrapper">
+        <div class="middle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).bind('scroll',function () { 
+            window.scrollTo(0,0); 
+            });
+            $(window).on('load', function () {
+                $(document).unbind('scroll');
+                console.log("loading is fine");
+                jQuery("#preloader").fadeOut('slow');
+            })
+    </script>
+    
+
     <div style="background-color:rgb(100, 29, 35)" class="container">
         <img id="imageFirst" src="web1.webp" class="image">
         <i style="position: absolute;top: 10px;left: 5px;color: aliceblue;" class="fa fa-bars"></i>
@@ -130,8 +158,6 @@
     <br>
 
     
-
-    <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
