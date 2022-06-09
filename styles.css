@@ -1,4 +1,10 @@
 
+@font-face {
+  font-family: "Coffee";
+  src: url("fonts/Coffee\ Extra.ttf") format("truetype"),
+  url("fonts/Coffee\ Extra.otf") format("opentype");
+  }
+
 .middle {
   top: 50%;
   left: 50%;
@@ -206,7 +212,7 @@
     position: relative;top: 60px;
     color: white;
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: "coffee";
   }
 
   body{margin: 0%}
