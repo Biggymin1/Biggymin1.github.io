@@ -15,21 +15,16 @@
 
 <body>
 
+    
     <div id="preloader" class="middle-wrapper">
         <div class="middle">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-            <div class="bar bar4"></div>
-            <div class="bar bar5"></div>
-            <div class="bar bar6"></div>
-            <div class="bar bar7"></div>
-            <div class="bar bar8"></div>
+            <iframe scrolling = "no" width="1500" height="1500" src="lottie.html" frameborder="0"></iframe>
         </div>
     </div>
 
 
     <script>
+        
         $(document).bind('scroll',function () { 
             window.scrollTo(0,0); 
             });
@@ -37,6 +32,7 @@
                 $(document).unbind('scroll');
                 console.log("loading is fine");
                 jQuery("#preloader").fadeOut('slow');
+                
             })
     </script>
     

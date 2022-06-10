@@ -33,14 +33,14 @@ function change_page_paypal(){
 function changeImageForSmallScreen(){
 
     if(window.innerWidth <500){
-        console.log("changing");
+        console.log("changing image for small screen");
+        console.log(window.innerWidth);
         document.getElementById("imageFirst").className = "image-mod";
-        console.log('hello');
     }
     else{
-        console.log("changing");
+        console.log("changing for regular screen");
+        console.log(window.innerWidth);
         document.getElementById("imageFirst").className = "image";
-        console.log('hello');
     }
 }
 
@@ -51,7 +51,6 @@ function changeRowForSmallScreen(){
         document.getElementById("mobileRow").style.display = 'block';
         document.getElementById("mobileRow1").style.display = 'block';
         document.getElementById("mobileRow2").style.display = 'block';
-        console.log('hello');
         var x = document.getElementsByClassName("iconRow3");
         var i;
         for (i = 0; i < x.length; i++) {
@@ -63,7 +62,6 @@ function changeRowForSmallScreen(){
         document.getElementById("mobileRow").style.display = 'none';
         document.getElementById("mobileRow1").style.display = 'none';
         document.getElementById("mobileRow2").style.display = 'none';
-        console.log('hello');
 
         var x = document.getElementsByClassName("iconRow3");
         var i;
@@ -74,11 +72,23 @@ function changeRowForSmallScreen(){
 
 }
 
+function combined1(){
+    console.log("resize is ran");
+    changeImageForSmallScreen();
+    changeRowForSmallScreen();
+}
+
+function combined2(){
+    window.setTimeout(changeRowForSmallScreen,1000);
+    console.log("load is ran");
+    changeImageForSmallScreen();
+    changeRowForSmallScreen();
+}
+// Calling the function for the first time
 changeRowForSmallScreen();
 changeImageForSmallScreen();
  
 // Attaching the event listener function to window's resize event
-window.addEventListener("resize", changeImageForSmallScreen);
-window.addEventListener("resize", changeRowForSmallScreen);
+window.addEventListener("resize", combined1);
+window.addEventListener("load", combined2);
 
-// Calling the function for the first time
