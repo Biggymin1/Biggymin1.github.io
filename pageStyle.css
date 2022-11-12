@@ -4,10 +4,12 @@ font-family: 'Rubik Wet Paint', cursive;
 }
 
 .story{
-    width: 40%;
+    width: 60%;
     margin-left: 50px;
     color: grey;
-    font-size: larger;
+    font-size: 1.75vw;
+    position:static;
+    transform: translate(1vw,0);
 }
 
 .story-mod{
@@ -24,6 +26,15 @@ font-family: 'Rubik Wet Paint', cursive;
 .sub-title{
     font-family: 'Bebas Neue', cursive;
     margin-left: 30px;
+    font-size: 2vw;
+}
+
+.sub-titleRight{
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 0px;
+    margin: 0%;
+    position: absolute;
+    transform: translate(15%,0%);
 }
 
 .vl {
@@ -35,3 +46,11 @@ font-family: 'Rubik Wet Paint', cursive;
     top: 90;
   }
 
+.top-right{
+    float: right;
+    width: 50vw;
+}
+
+.top-left{
+    width: 50vw;
+}
