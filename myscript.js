@@ -24,6 +24,10 @@ function change_page_discord(){
     window.location.href = "https://discordapp.com/users/8275";
 }
 
+function change_page_wattpad(){
+    window.location.href = "https://www.wattpad.com/user/Biggymin";
+}
+
 function change_page_paypal(){
     window.location.href = "https://www.paypal.com/paypalme/AminWali360";
 }
