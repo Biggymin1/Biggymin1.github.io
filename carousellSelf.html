@@ -1,0 +1,32 @@
+
+
+<script>
+    let isDown;
+    function determineIfClick(){
+        isDown = true;
+        // wait 1 seconds
+        setTimeout(testFunction,100)
+    }
+
+    function testFunction(){
+        if (isDown == false){ 
+            // down less than a 100ms indicating a click
+            console.log("click")
+        }
+        else{
+            // down more than a 100ms indicating a scroll
+            console.log("scroll")
+        }
+    }
+
+    function onUp(){
+        isDown = false;
+    }
+</script>
+
+<link rel="stylesheet" href="css/carousellSelf.css">
+<div class="carousell">
+    <div onpointerdown="determineIfClick()" onpointerleave="onUp()" class="item"></div>
+</div>
+
+<!-- using setTimeout, the code will run after timeout -->

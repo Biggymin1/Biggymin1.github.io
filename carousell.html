@@ -5,22 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
 		<link rel="stylesheet" href="css/style.css">
+
+		<!-- added functionality to determine if swipe or click -->
+		<script src="js/carousell.js"></script>
   </head>
   <body>
+	<var>
+	</var>
+
+
 		<br>
 					<div class="col-md-12">
 						<div class="featured-carousel owl-carousel">
-							<div class="item">
+
+							<div onpointerdown="determineIfClick('about.html')" onpointerup="onUp()" class="item">
 								<div class="work">
 									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-1.jpg);">
 										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span onclick="changeToAbout()" class="ion-ios-search"></span>
+											<span class="ion-ios-search"></span>
 										</a>
 									</div>
 									<div class="text pt-3 w-100 text-center">
@@ -29,45 +37,50 @@
 									</div>
 								</div>
 							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/screenshot.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span onclick="changeToProgramming()" class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Programming</a></h3>
-										<span>Game-dev, Software-dev, Machine Learning, Reverse Engineering, Website-Dev, Mobile-App dev</span>
-									</div>
+
+						
+							<div onpointerdown="determineIfClick('programming.html')" onpointerup="onUp()" class="item">
+							<div class="work">
+								<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/screenshot.jpg);">
+									<a href="#" class="icon d-flex align-items-center justify-content-center">
+										<span class="ion-ios-search"></span>
+									</a>
+								</div>
+								<div class="text pt-3 w-100 text-center">
+									<h3><a href="#">Programming</a></h3>
+									<span>Game-dev, Software-dev, Machine Learning, Reverse Engineering, Website-Dev, Mobile-App dev</span>
 								</div>
 							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/totepunk.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Design</a></h3>
-										<span>3D Models and Arts</span>
-									</div>
+						</div>
+						<div onpointerdown="determineIfClick('about.html')" onpointerup="onUp()" class="item">
+							<div class="work">
+								<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/totepunk.jpg);">
+									<a href="#" class="icon d-flex align-items-center justify-content-center">
+										<span class="ion-ios-search"></span>
+									</a>
+								</div>
+								<div class="text pt-3 w-100 text-center">
+									<h3><a href="#">Design</a></h3>
+									<span>3D Models and Arts</span>
 								</div>
 							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/obs.png);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Others</a></h3>
-										<span>Live Stream Management, Visualization Videos, Video Editing (Color grading etc), Image Editing, Virtual Effects, AI Image Restoration etc</span>
-									</div>
+						</div>
+						<div onpointerdown="determineIfClick('about.html')" onpointerup="onUp()" class="item">
+							<div class="work">
+								<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/obs.png);">
+									<a href="#" class="icon d-flex align-items-center justify-content-center">
+										<span class="ion-ios-search"></span>
+									</a>
+								</div>
+								<div class="text pt-3 w-100 text-center">
+									<h3><a href="#">Others</a></h3>
+									<span>Live Stream Management, Visualization Videos, Video Editing (Color grading etc), Image Editing, Virtual Effects, AI Image Restoration etc</span>
 								</div>
 							</div>
+						</div>
+							
+							
+							
 
 							
 						</div>
