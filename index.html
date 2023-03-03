@@ -1,21 +1,18 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amin Wali</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport"/>
+</head>
 
-    <!-- External link, orginal is styles only -->
-
-        <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <script src="jquery.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
 <body>
 
-    
     <div id="preloader" class="middle-wrapper">
         <div class="middle">
             <iframe scrolling = "no" width="1500" height="1500" src="lottie.html" frameborder="0"></iframe>
@@ -35,133 +32,180 @@
                 
             })
     </script>
+
+<link rel="stylesheet" href="css/explore.css">
+<script defer src="scroll page/animation.js"></script>
+
+ <!-- first page -->
+<div class="parent-bg">
+    <div class="bg"></div>
+
+    <!-- parent-bg is parent -->
+
+    <div class="left-row">
+        <img src="../images/self.JPG" class="circularImage">
+    </div>
     
-
-    <div style="background-color:rgb(100, 29, 35)" class="container">
-        <img id="imageFirst" src="web1.webp" class="image">
-        <i style="position: absolute;top: 10px;left: 5px;color: aliceblue;" class="fa fa-bars"></i>
-        <h5 class="textBanner">ths website is purely made with html and css by Amin Wali</h5>
-      </div>
-
-
-    <div class="div-row">
-        <br>
-
-        <div class="iconRow3">
-            <!-- this is each row that contains 2 image -->
-            <div style="position: absolute;width: 75px;"onclick = "change_page_instagram()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="ignobg.png">
-                <h6 class="appTitle">Instagram</h6>
-            </div>
-
-            <div style="position: absolute; left: 46%;width: 75px;"onclick = "change_page_github()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="github.webp">
-                <h6 class="appTitle">Github</h6>
-            </div>
-
-            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_cgtrader()">
-                <img class="iconToClick" src="cgtrader-modified.png">
-                <h6 class="appTitle">CGTrader</h6>
-            </div>     
-            <!-- this is text for each icon -->
+    <div class="right-row">
+        <h1 class="text" style="font-family: hk;">Hello I'm Amin Wali</h1>
+    
+        <div class="container">
+            <ul class="text2">
+                <li>
+                    <h2 >Student</h2>
+                </li>
+                <li>
+                    <h2 >Programmer</h2>
+                </li>
+                <li>
+                    <h2 >3D Artist</h2>
+                </li>
+                <li>
+                    <h2 >Game Developer</h2>
+                </li>
+                <li>
+                    <h2 >Designer</h2>
+                </li>
+            </ul>
         </div>
-
-        <div class="iconRow3">
-            <!-- this is each row that contains 2 image -->
-            <div style="position: absolute;width: 75px;"onclick = "change_page_googleplay()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="google.webp">
-                <h6 class="appTitle">Google Play</h6>
-            </div>
-
-            <div style="position: absolute; left: 46%;width: 75px;"onclick = "change_page_youtube()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="youtube.png">
-                <h6 class="appTitle">Youtube</h6>
-            </div>
-
-            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_wattpad()">
-                <img class="iconToClick" src="wattpad-logo.svg">
-                <h6 class="appTitle">Wattpad</h6>
-            </div>     
-            <!-- this is text for each icon -->
-        </div>
-
-        <div id="mobileRow" class="iconRow2">
-            <!-- this is each row that contains 2 image -->
-            <div style="position: absolute;width: 75px;"onclick = "change_page_instagram()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="ignobg.png">
-                <h6 class="appTitle">Instagram</h6>
-            </div>
-        
-            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_github()">
-                <img class="iconToClick" src="github.webp">
-                <h6 class="appTitle">Github</h6>
-            </div>     
-            <!-- this is text for each icon -->
-        </div>
-
-        <div id="mobileRow1" class="iconRow2">
-            <!-- this is each row that contains 2 image -->
-            <div style="position: absolute;width: 75px;"onclick = "change_page_cgtrader()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="cgtrader-modified.png">
-                <h6 class="appTitle">CG Trader</h6>
-            </div>
-        
-            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_googleplay()">
-                <img class="iconToClick" src="google.webp">
-                <h6 class="appTitle">Google Play</h6>
-            </div>     
-            <!-- this is text for each icon -->
-        </div>
-
-        <div id="mobileRow2" class="iconRow2">
-            <!-- this is each row that contains 2 image -->
-            <div style="position: absolute;width: 75px;"onclick = "change_page_youtube()">
-                <!-- each image and text considered as 1 -->
-                <img class="iconToClick" src="youtube.png">
-                <h6 class="appTitle">Youtube</h6>
-            </div>
-        
-            <div style="position: absolute;right: 0%;width: 75px;"onclick = "change_page_wattpad()">
-                <img class="iconToClick" src="wattpad-logo.svg">
-                <h6 class="appTitle">Wattpad</h6>
-            </div>     
-            <!-- this is text for each icon -->
-        </div>
-
-
-
-        <div class="row">
-            <button id="lb" onclick="change_page_paypal()" class="bottomIcon"><i style="color: white;" class="fa fa-paypal"></i></button>
-            <h2 style="font-size: large;color: aliceblue;font-family: 'Courier New', Courier, monospace;">aminwali360@gmail.com</h2>
-            <button id="rb" onclick= "change_page_paypal()" class = "bottomIcon"><i style="color: white;" class="fa fa-coffee"></i></button>
-        </div>
-
-        <h3 style="text-align: center;color: white;font-family:'Courier New', Courier, monospace;">Amin Wali</h3>
-
-        <section id="ex-part">
-            <iframe src="carousell.html" scrolling = "no" width="100%" height="600px"></iframe>
-        </section>
-        
+            
+    
+        <button onclick="myFunction()" class="button1">Download CV</button>
+        <button onclick="window.location.href='https://www.paypal.com/paypalme/AminWali360'" class="button2">Buy me a coffee</button>
+        <button onclick="window.location.href='link.html'" class="button3">Link Page</button>
+        <button onclick ="scroller()"class="button4">Learn More</button>
     </div>
 
+    <script>
+        function myFunction() {
+          alert("CV has not been made yet, so sorry for the inconvenience");
+        }
 
-    <br>
+        function scroller(){
+            window.scrollTo({top:800,behavior:"smooth"});
+        }
+        </script>
 
-    
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+</div>
+ <!-- end of first page -->
+
+<!-- start of second page -->
+<!-- total of 5 work-->
+<div class="second-page">
+    <h1 class="subtitle">A LITTLE ABOUT ME</h1>
+    <h2 class="pagenum">02</h2>
+    <img src="images/s.webp" id="top" class="img-top-before"> <!-- class is changed in animation.js as animation-->
+    <h2 class = "thin-text">I was born in Malaysia. Currently studying in Sekolah Sultan Alam Shah and have been designing and developing since 2016.</h2>
+    <img src="images/t.jpg" class="img-2nd">
+</div>
+
+<!-- end of second page -->
+
+<!-- start of third page -->
+<div class="third-page">
+    <h1 class="subtitle-center">MY WORK</h1>
+    <h2 class="pretitle">Creative Arts</h2>
+
+    <div class="item-display" id="display-left">
+        <video class="img-center" autoplay>
+            <source src="scroll page/graphics/wbgfilter.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <h2 class="subtext">Instagram Effects and Filters</h2>
+        <h3 class="extext">Simple 3d ar filter for instagram</h3>
+    </div>
+
+    <div class="item-display" id="display-center">
+        <img src="scroll page/graphics/render.webp" class="img-center">
+        <h2 class="subtext">Traditional Fighter</h2>
+        <h3 class="extext">Used in game development named daulat</h3>
+    </div>
+
+    <div class="item-display" id="display-right">
+        <video class="img-center" autoplay>
+            <source src="scroll page/graphics/drone.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <h2 class="subtext">Mockup and Product Design </h2>
+        <h3 class="extext">Breakdown of drone model</h3>
+    </div>
+
+</div>
+
+<!-- end of third page -->
+
+<!-- start of fourth page -->
+<!-- total of 5 work-->
+<div class="fourth-page">
+    <h2 class="pretitle">Software and development</h2>
+
+    <div class="item-display" id="display-left">
+        <video class="img-center" autoplay>
+            <source src="scroll page/graphics/cube zoyt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <h2 class="subtext">Cube Zoyt</h2>
+        <h3 class="extext">First game that was created by me and published on google play</h3>
+    </div>
+
+    <div class="item-display" id="display-center">
+        <video class="img-center" autoplay>
+            <source src="scroll page/graphics/flutter.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <h2 class="subtext">Vision</h2>
+        <h3 class="extext">A Fully functional social media complete with both frontend and backend</h3>
+    </div>
+
+    <div class="item-display" id="display-right">
+        <img src="scroll page/graphics/tataweb.webp" class="img-center">
+        <h2 class="subtext">TataWeb</h2>
+        <h3 class="extext">Tatabahasa app pt3 standard, available on google play</h3>
+    </div>
+
+    <h2 class = "thin-text2">Note that there are more which was not shown which may be a wip. some project  or skills may not be displayed due to being not suitable to the website or legal issues. more content available on youtube</h2>
+
+</div>
+
+<!-- end of fourth page -->
+
+<div class="third-page">
+    <h1 class="subtitle-center">Current Focus</h1>
+    <h2 class="pretitle">Projects and Studies</h2>
+
+    <div class="item-display" id="display-left">
+        <img src="scroll page/graphics/neural.gif" class="img-center">
+        <h2 class="subtext">Learning Machine Learning</h2>
+        <h3 class="extext">Specifically Deep reinforcement learning where neural network is combined with reinforcement learning for development of artificial intelligence</h3>
+    </div>
+
+    <div class="item-display" id="display-center">
+        <video class="img-center" autoplay>
+            <source src="scroll page/graphics/sasnest.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        <h2 class="subtext">School System</h2>
+        <h3 class="extext">School system for sekolah sultan alam shah that consist of automation and database of outing, merit and home return</h3>
+    </div>
+
+    <div class="item-display" id="display-right">
+        <img src="scroll page/graphics/spm.webp" class="img-center">
+        <h2 class="subtext">SPM (Sijil Pelajaran Malaysia)</h2>
+        <h3 class="extext">Year 10 exam for Malaysian Students</h3>
+    </div>
+
+    <h2 class = "thin-text2">Note that all of this is subject to change depending on latest situation.</h2>
+
+    <div class="dot-circle">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
+    </div>
+</div>
+
+
+
 
 
 </body>
-
-<script src="myscript.js"></script>
-
 </html>

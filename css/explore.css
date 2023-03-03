@@ -1,0 +1,629 @@
+@media screen and (max-width: 700px){
+
+ body .left-row{
+    width: 400px;
+    transform: translate(-50%,0);
+    left: 50vw;
+    top:0;
+    position: relative;
+ }
+
+ body .right-row{
+  width: 400px;
+  transform: translate(-50%,0);
+  left: 50vw;
+  top: 0;
+  position: relative;
+ }
+
+ body .subtitle{
+  display: block;
+  font-size: xxx-large;
+  width: fit-content;
+  left: 50vw;
+  transform: translate(-50%,0);
+  position: relative;
+ }
+
+ body .pagenum{
+  display: block;
+  position: relative;
+  top: 0;
+ }
+
+ body .img-top{
+    display: block;
+    width: 300px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0);
+    position: relative;
+ }
+
+ body .thin-text{
+  display: block;
+  font-size: xx-large;
+  top: 0;
+  width: 90vw;
+  position: relative;
+  left: 5%;
+ }
+
+ body .thin-text2{
+  display: block;
+  font-size: medium;
+  top: 0;
+  width: 90vw;
+  position: relative;
+  left: 5%;
+ }
+
+ body .dot-circle{
+  position: relative;
+ }
+
+ body .img-2nd{
+  width: 40vw;
+  height: fit-content;
+  display: block;
+  transform: rotate(-10deg);
+  left: 30vw;
+  top: 0;
+  background-color:aqua;
+  position: relative;
+ }
+
+ body .item-display{
+  display: block;
+  position: relative;
+  left: 50%; 
+  width: 70vw;
+  transform: translate(-50%,0);
+ }
+
+ /*make all 3 id centered*/
+ body #display-left{
+  left: 50%; transform: translate(-50%,0);top: 0%;
+ }
+
+ body #display-center{
+  left: 50%; transform: translate(-50%,0);top: 0%;
+ }
+
+ body #display-right{
+  left: 50%; transform: translate(-50%,0);top: 0%;
+ }
+
+ body .subtitle-center{
+  position: relative;
+  font-size: 8vw;
+ }
+
+ body .pretitle{
+  position: relative;
+  top: 0%;
+ }
+
+ body .parent-bg{
+  height: fit-content;
+  scroll-behavior: smooth;
+ }
+
+ body .second-page{
+  height: fit-content;
+  scroll-behavior: smooth;
+ }
+
+ body .third-page{
+  height: fit-content;
+  scroll-behavior: smooth;
+ }
+
+ body .fourth-page{
+  height: fit-content;
+  scroll-behavior: smooth;
+ }
+
+ body .circularImage{
+  transform: translate(-50%,0);
+ }
+
+}
+
+.pagenum{
+  position: absolute;
+  font-family: tt;
+  font-weight: lighter;
+  font-size: 45px;
+  width: 500px;
+  left: 80%;
+  top: 10%;
+  display: flex;
+}
+
+
+
+  .parent-bg {
+    position: relative;
+    /* Full height */
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type:mandatory;
+  }
+
+  .subtitle{
+    color: black;
+    font-family: hk;
+  }
+
+  .top-row{
+    position: relative;
+    top: 50%;
+    /*this is 50% of viewport height*/
+    height: max-content;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  /*issue dia right now, aku dah centerkan by combine width
+  then center balut top row, but dia hilang inline block yang
+  auto adjust if takde space sebab dah balut*/
+
+  /*so buat balik, takleh balut top row*/
+
+  .left-row{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    vertical-align: top;
+    box-sizing: border-box;
+    display: inline-block;
+    left: 25vw;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    /*this is 50% of self height*/
+  }
+
+  /*if nak center left and right row both width combined 50%*/
+
+  .right-row{
+    position: absolute;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 300px;
+    height: 375px;
+    left: 75vw;
+    transform: translate(-50%,-50%);
+    top: 50vh;
+    /*this is 50% of self height*/
+  }
+
+  .svg{
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    filter: invert();
+  }
+
+  .svg2{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    filter: invert();
+  }
+
+  .button1{
+    position: absolute;
+    height: 40px;
+    width: 70%;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 5%;
+    background-color: transparent;
+    font-family: os;
+    font-weight: 600;
+    color: white;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .button2{
+    position: absolute;
+    height: 40px;
+    border-width: 2px;
+    font-weight: 600;
+    border-color: aliceblue;
+    border-radius: 5%;
+    background-color: transparent;
+    font-family: os;
+    color: white;
+    top: 170px;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .button3{
+    position: absolute;
+    height: 40px;
+    border-width: 2px;
+    font-weight: 600;
+    border-color: aliceblue;
+    border-radius: 5%;
+    background-color: transparent;
+    font-family: os;
+    color: white;
+    top: 240px;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .button4{
+    position: absolute;
+    height: 40px;
+    border-width: 2px;
+    font-weight: 600;
+    border-color: aliceblue;
+    border-radius: 5%;
+    background-color: transparent;
+    font-family: os;
+    color: white;
+    top: 310px;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  @font-face {
+    font-family: hk ;
+    src: url("../fonts/hk-grotesk.semibold.ttf");
+  }
+
+  @font-face {
+    font-family: os ;
+    src: url("../fonts/OpenSauceSans-Light.ttf");
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("../images/screen.jpg");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /* Full height */
+    height: 100vh; 
+    width: 100vw;
+  
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(40px);
+  }
+
+  .circularImage{
+    height: 100%;
+    left: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+  }
+
+  .text{
+    position: absolute;
+    color: white;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-align: center;
+  }
+
+  .container{
+    background-color: transparent;
+    width: 100%;
+    height: 15%;
+    transform: translate(60px,50px);
+    overflow: hidden;
+  }
+
+  .text2{
+    position: absolute;
+    list-style-type: none;
+    font-family: os;
+    color: white;
+    top: 40px;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    transform: translate(-25%,25%);
+    animation: lianim 15s steps(5) infinite, anim2 3s infinite;
+    height: 60px;
+  }
+
+  /*need to counter effect since only top is visible so we put barrier, no need overflow hidden, kinda like clipping mask using container or clipping*/
+
+
+  @keyframes anim2 {
+    0%{
+      opacity: 0;
+    }
+    30%{
+      opacity: 1;
+    }
+    70%{
+      opacity: 1
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  @keyframes lianim {
+    0%{
+      top: 0px;
+    }
+    100%{
+      top: -240px;
+    }
+  }
+
+  .text3{
+    position: absolute;
+    font-family: os;
+    color: white;
+    opacity: 0;
+    top: 30px;
+    left: 50%;
+    animation-delay: 15s;
+    transform: translate(-50%,0);
+    animation: anim2 15s infinite;
+  }
+
+  .text4{
+    position: absolute;
+    font-family: os;
+    top: 30px;
+    opacity: 0;
+    color: white;
+    left: 50%;
+    animation-delay: 30s;
+    transform: translate(-50%,0);
+    animation: anim2 15s infinite;
+  }
+
+  .text5{
+    position: absolute;
+    font-family: os;
+    color: white;
+    opacity: 0;
+    top: 30px;
+    left: 50%;
+    animation-delay: 45s;
+    transform: translate(-50%,0);
+    animation: anim2 15s infinite;
+  }
+
+  .text6{
+    position: absolute;
+    font-family: os;
+    top: 30px;
+    opacity: 0;
+    color: white;
+    left: 50%;
+    animation-delay: 60;
+    transform: translate(-50%,0);
+    animation: anim2 15s infinite;
+  }
+
+  /* Second Page Stuff starts here */
+
+@font-face {
+  font-family: arimo;
+  src: url(../fonts/Arimo-Regular.ttf);
+}
+
+@font-face {
+  font-family: tt;
+  src: url(../fonts/Fontspring-DEMO-tt_commons_pro_condensed_light.otf);
+}
+
+  .second-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    filter: grayscale(100%);
+  }
+
+  .third-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .fourth-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .fifth-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .subtitle{
+    position: absolute;
+    font-family: arimo;
+    font-weight:lighter;
+    font-size: 65px;
+    letter-spacing: 10px;
+    width: 500px;
+    margin-left: 7%;
+    transform: translate(0,45%);
+    display: flex;
+  }
+
+
+  .thin-text{
+    position: absolute;
+    font-family: tt;
+    font-weight: lighter;
+    font-size: 45px;
+    width: 500px;
+    left: 25%;
+    top: 60%;
+    display: flex;
+  }
+
+  .thin-text2{
+    position: relative;
+    font-family: tt;
+    font-weight: lighter;
+    font-size: medium;
+    width: 500px;
+    left: 25%;
+    top: 100%;
+    display: flex;
+  }
+
+  .img-top{
+    position: absolute;
+    width: 25%;
+    transform: translate(0,70%) scaleX(-1);
+    opacity: 1;
+    left: 50%;
+    display: flex;
+    transition: transform 1s, opacity 1s;
+  }
+
+  .img-top-before{
+    position: absolute;
+    width: 25%;
+    transform: translate(0,70%) scaleX(-1);
+    opacity: 0.5;
+    left: 50%;
+    display: flex;
+  }
+
+  .opacity-fade{
+    opacity: 1 !important;
+    transition: 1s;
+  }
+
+  .img-2nd{
+    position: absolute;
+    width: 10%;
+    top: 60%;
+    left: 70%;
+    display: flex;
+  }
+
+  /*Third Page Stuff Starts Here */
+
+  @font-face {
+    font-family: arsenic;
+    src: url("../fonts/ArsenicaTrial-Light.ttf");
+  }
+
+  .subtitle-center{
+    position: absolute;
+    font-family: arimo;
+    font-weight:lighter;
+    font-size: 65px;
+    letter-spacing: 10px;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
+
+  .pretitle{
+    position: absolute;
+    font-family: os;
+    font-weight: lighter;
+    font-size: xxx-large;
+    left: 50vw;
+    top: 10%;
+    text-align: center;
+    transform: translate(-50%,0);
+    /*correct*/
+  }
+
+  #display-left{
+    left: 25%; transform: translate(-50%,0); top: 30vh;
+  }
+
+  #display-center{
+    left: 50%; transform: translate(-50%,0); top: 50vh;
+  }
+
+  #display-right{
+    left: 75%; transform: translate(-50%,0); top: 30vh;
+  }
+
+  .item-display{
+    position: absolute;
+    width: 22.5vw;
+    height: fit-content;
+    opacity: 0;
+  }
+
+  .img-center{
+    width: 100%;
+  }
+
+  .subtext{
+    font-family: arsenic;
+    font-size: xx-large;
+  }
+
+  .extext{
+    font-family: tt;
+    margin-top: -10%;
+    font-weight: lighter;
+    font-size: x-large;
+  }
+
+  .dot1{
+    height: 10px;
+    margin: 2px;
+    width: 10px;
+    background-color: #48ab45;
+    border-radius: 50%;
+    animation: beeping 1s infinite;
+  }
+
+  @keyframes beeping {
+    50%{
+      background-color: transparent;
+    }
+    100%{
+      background-color: #48ab45;
+    }
+  }
+
+  .dot2{
+    height: 10px;
+    width: 10px;
+    margin: 2px;
+    background-color: red;
+    border-radius: 50%;
+  }
+
+  .dot3{
+    height: 10px;
+    margin: 2px;
+    width: 10px;
+    background-color: orange;
+    border-radius: 50%;
+  }
+
+  .dot-circle{
+    position: absolute;
+    left: 90vw;
+    bottom: 20px;
+  }
