@@ -14,6 +14,8 @@
 
 <body>
 
+<!-- add something to just remove loading if it is too long than 3 seconds -->
+
     <div id="preloader" class="middle-wrapper">
         <div class="middle">
             <iframe scrolling = "no" width="1500" height="1500" src="lottie.html" frameborder="0"></iframe>
@@ -22,7 +24,15 @@
 
 
     <script>
-        
+        /* here is the script no external js */
+
+        setTimeout(function(){
+            console.log("Executed after 3 second");
+            $(document).unbind('scroll');
+            console.log("loading is skipped after 3 seconds");
+            jQuery("#preloader").fadeOut('slow');
+        }, 3000);
+
         $(document).bind('scroll',function () { 
             window.scrollTo(0,0); 
             });
@@ -33,6 +43,7 @@
                 
             })
     </script>
+
 
 <link rel="stylesheet" href="css/explore.css">
 <script defer src="scroll page/animation.js"></script>
